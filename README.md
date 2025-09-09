@@ -1,4 +1,5 @@
-### Contributors:
+## Senior Devs
+### Members:
 1.    Aaron-Onuigbo Kelvin
 2.    Isimbi Nelly Assoumpta
 3.    Jonathan Mugisha
@@ -12,4 +13,4 @@ Architectural Design:
 
 ![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/Architectural.png) 
 
-Scrum board:
+[Scrum Board](https://github.com/users/KelvinAaron/projects/1/views/1)
