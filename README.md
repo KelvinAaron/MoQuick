@@ -11,6 +11,6 @@ This repository contains code to help users organise their spendings done throug
 
 Architectural Design:
 
-![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/Architectural.png) 
+![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/docs/Architectural.png) 
 
 [Scrum Board](https://github.com/users/KelvinAaron/projects/1/views/1)
