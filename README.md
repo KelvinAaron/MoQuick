@@ -7,3 +7,8 @@ Contributors:
 We are a team of software engineers working together to create a simple budget planning app synced with the users momo.
 
 This repository contains code to help users organise their spendings done through momo for easy financial planning.
+
+
+Architectural Design: https://drive.google.com/file/d/1wwtouEUc38bIxmxkQ9VSR1EcOLofzxMF/view?usp=sharing
+
+Scrum board:
