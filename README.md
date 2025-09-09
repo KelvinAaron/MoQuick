@@ -7,7 +7,7 @@
 
 We are a team of software engineers working together to create a simple budget planning app synced with the users momo.
 
-This repository contains code to help users organise their spendings done through momo for easy financial planning.
+MoQuick is an application that sorts financial data from and XML data source and displays such data in an ordered format on the web. It can be used to help users organise their spendings done through momo for easy financial planning.
 
 Architectural Design:
 
