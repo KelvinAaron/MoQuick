@@ -22,6 +22,7 @@
       "system_log": {
         "id": 1,
         "transaction_id": "0001",
+        "status": "successful",
         "message": "Transaction completed successfully",
         "date": "2024-05-21T10:05:00"
       }

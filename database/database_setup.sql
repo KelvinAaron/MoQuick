@@ -56,7 +56,7 @@ INSERT INTO transactions (transaction_id, user_id, category_id, message, amount,
 ("0004", 4, 2, 'Refund from Store B', 40.00, '2024-10-12 16:45:00'),
 ("0005", 5, 3, 'Grocery shopping', 120.75, '2024-12-27 11:20:00');
 
-INSERT INTO system_logs (id, transaction_id, message, date) VALUES
+INSERT INTO system_logs (id, transaction_id, status, message, date) VALUES
 (1, "0001", "successful", 'Transaction completed successfully', '2024-05-21 10:05:00'),
 (2, "0002", "failed", 'Transaction failed due to insufficient funds', '2024-07-05 14:35:00'),
 (3, "0003", "pending", 'Transaction pending approval', '2024-09-11 09:20:00'),
