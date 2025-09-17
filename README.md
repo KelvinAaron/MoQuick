@@ -20,6 +20,10 @@ The **transactions table** will then bring together data from the user and the t
 
 The status of the transaction is then logged in the **system logs table** it tracks if a transaction was successful, pending or failed with the response saved.
 
+Here is a simple test of CRUD operations returned after running the database_setup.sql script
+
+![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/docs/demo.png) 
+
 #### JSON Representation:
 From the JSON example in /examples in the first momoquick object we see how each tables columns and attribute is represented as keys and value in the JSON. The user table show the columns (id, full_name, id_number) and their values for one record in the table (1, Jane Smith, 12845).
 
