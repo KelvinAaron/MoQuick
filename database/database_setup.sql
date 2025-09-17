@@ -27,7 +27,8 @@ CREATE TABLE transactions (
 
 CREATE TABLE system_logs (
     id INT PRIMARY KEY,
-    transaction_id VARCHAR(250),
+    transaction_id VARCHAR(250) NOT NULL,
+    status VARCHAR(100) NOT NULL,
     message VARCHAR(255) NOT NULL,
     date DATETIME NOT NULL,
     FOREIGN KEY (transaction_id) REFERENCES transactions(transaction_id)
@@ -56,10 +57,10 @@ INSERT INTO transactions (transaction_id, user_id, category_id, message, amount,
 ("0005", 5, 3, 'Grocery shopping', 120.75, '2024-12-27 11:20:00');
 
 INSERT INTO system_logs (id, transaction_id, message, date) VALUES
-(1, "0001", 'Transaction completed successfully', '2024-05-21 10:05:00'),
-(2, "0002", 'Transaction failed due to insufficient funds', '2024-07-05 14:35:00'),
-(3, "0003", 'Transaction pending approval', '2024-09-11 09:20:00'),
-(4, "0004", 'Transaction completed successfully', '2024-10-12 16:50:00'),
-(5, "0005", 'Transaction completed successfully', '2024-12-27 11:25:00');
+(1, "0001", "successful", 'Transaction completed successfully', '2024-05-21 10:05:00'),
+(2, "0002", "failed", 'Transaction failed due to insufficient funds', '2024-07-05 14:35:00'),
+(3, "0003", "pending", 'Transaction pending approval', '2024-09-11 09:20:00'),
+(4, "0004", "successful", 'Transaction completed successfully', '2024-10-12 16:50:00'),
+(5, "0005", "successful", 'Transaction completed successfully', '2024-12-27 11:25:00');
 
 

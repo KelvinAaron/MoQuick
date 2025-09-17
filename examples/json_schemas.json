@@ -44,14 +44,7 @@
           "id": 1,
           "transaction_type": "Code",
           "transaction_flow": "CREDIT"
-        },
-        "system_logs": [
-          {
-            "id": 1,
-            "message": "Transaction completed successfully",
-            "date": "2024-05-21T10:05:00"
-          }
-        ]
+        }
       }
     }
   }
