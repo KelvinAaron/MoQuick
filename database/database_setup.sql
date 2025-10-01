@@ -25,8 +25,7 @@ CREATE TABLE Agent (
     Agent_Id INT NOT NULL,
     Amount INT NOT NULL,
     Date DATETIME NOT NULL,
-    Fee INT NOT NULL
-    FOREIGN KEY (Agent_Id) REFERENCES Users (User_Id)
+    Fee INT NOT NULL FOREIGN KEY (Agent_Id) REFERENCES Users (User_Id)
 );
 
 -- MOMO CREDIT
@@ -63,4 +62,30 @@ CREATE TABLE MTN_Bundle (
     Date DATETIME NOT NULL
 );
 
-
+INSERT INTO
+    Bank_Deposit (Transaction_Id, Amount, Date)
+VALUES (
+        'BKD001',
+        5000,
+        '2024-01-15 10:30:00'
+    ),
+    (
+        'BKD002',
+        7500,
+        '2024-01-16 11:00:00'
+    ),
+    (
+        'BKD003',
+        7500,
+        '2024-01-16 11:00:00'
+    ),
+    (
+        'BKD004',
+        7500,
+        '2024-01-16 11:00:00'
+    ),
+    (
+        'BKD005',
+        10000,
+        '2024-01-17 09:45:00'
+    );
