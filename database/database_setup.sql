@@ -19,11 +19,14 @@ CREATE TABLE Momo_Debit (
     FOREIGN KEY (UserId) REFERENCES Users (User_Id)
 );
 
--- BANK DEPOSIT
-CREATE TABLE Bank_Deposit (
-    Transaction_Id VARCHAR(250) PRIMARY KEY,
+-- AGENT
+CREATE TABLE Agent (
+    Transaction_Id INT PRIMARY KEY,
+    Agent_Id INT NOT NULL,
     Amount INT NOT NULL,
-    Date DATETIME NOT NULL
+    Date DATETIME NOT NULL,
+    Fee INT NOT NULL
+    FOREIGN KEY (Agent_Id) REFERENCES Users (User_Id)
 );
 
 -- MOMO CREDIT
@@ -34,13 +37,11 @@ CREATE TABLE Momo_Credit (
     Date DATETIME NOT NULL
 );
 
--- AGENT
-CREATE TABLE Agent (
-    Transaction_Id INT PRIMARY KEY,
-    Agent_Id INT NOT NULL,
+-- BANK DEPOSIT
+CREATE TABLE Bank_Deposit (
+    Transaction_Id VARCHAR(250) PRIMARY KEY,
     Amount INT NOT NULL,
-    Date DATETIME NOT NULL,
-    Fee INT NOT NULL
+    Date DATETIME NOT NULL
 );
 
 -- UTILITIES
@@ -61,4 +62,5 @@ CREATE TABLE MTN_Bundle (
     Fee INT NOT NULL,
     Date DATETIME NOT NULL
 );
-#
+
+
