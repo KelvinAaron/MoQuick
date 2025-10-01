@@ -2,51 +2,52 @@
   {
     "momoquick": {
       "user": {
-        "id": 1,
-        "full_name": "Jane Smith",
-        "id_number": 12845
+        "user_id": "U-001",
+        "name": "Jane Smith",
+        "type": "code",
+        "number": "12845"
       },
-      "transaction_category": {
-        "id": 1,
-        "transaction_type": "Code",
-        "transaction_flow": "CREDIT"
+      "momo_debit": {
+        "transaction_id": "MB-001",
+        "user_id": "U-001",
+        "amount": 1000,
+        "date": "2024-05-10 16:31:39",
+        "fee": 0
       },
-      "transaction": {
-        "transaction_id": "0001",
-        "user_id": 1,
-        "category_id": 1,
-        "message": "Payment received",
-        "amount": 2500.00,
-        "transaction_date": "2024-05-21T10:00:00"
+      "agent": {
+        "transaction_id": "AG-001",
+        "agent_id": "U-004",
+        "amount": 20000,
+        "date": "2024-05-26 02:10:27",
+        "fee": 350
       },
-      "system_log": {
-        "id": 1,
-        "transaction_id": "0001",
-        "status": "successful",
-        "message": "Transaction completed successfully",
-        "date": "2024-05-21T10:05:00"
-      }
-    }
-  },
-  { 
-    "comment": "Example of Complex JSON structure",
-    "momoquick": {
-      "transaction": {
-        "transaction_id": "0001",
-        "message": "Payment received",
-        "amount": 2500.00,
-        "transaction_date": "2024-05-21T10:00:00",
-        "user": {
-          "id": 1,
-          "full_name": "Jane Smith",
-          "id_number": 12845
-        },
-        "category": {
-          "id": 1,
-          "transaction_type": "Code",
-          "transaction_flow": "CREDIT"
-        }
+      "momo_credit": {
+        "transaction_id": "MC-001",
+        "name": "Jane Smith",
+        "amount": 2000,
+        "date": "2024-05-10 16:30:51"
+      },
+      "bank_deposit": {
+        "transaction_id": "BKD-001",
+        "amount": 40000,
+        "date": "2024-05-11 18:43:49"
+      },
+      "utilities": {
+        "transaction_id": "UTL-001",
+        "name": "MTN Cash Power",
+        "amount": 4000,
+        "fee": 0,
+        "date": "2024-05-26 13:31:00"
+      },
+      "mtn_bundle": {
+        "transaction_id": "MTNB-001",
+        "type": "AIRTIME",
+        "bundle_amount": null,
+        "amount": 2000,
+        "fee": 0,
+        "date": "2024-05-12 11:41:28"
       }
     }
   }
 ]
+
