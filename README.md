@@ -10,15 +10,17 @@ We are a team of software engineers working together to create a simple budget p
 MoQuick is an application that sorts financial data from and XML data source and displays such data in an ordered format on the web. It can be used to help users organise their spendings done through momo for easy financial planning.
 
 ### Documentation:
-The Database has 4 tables (users, transaction categories, transactions and system logs).
+The Database has 7 tables (Users, Momo_Debit, Agent, Momo_Credit, Bank_Deposit, Utilities and MTN_Bundle).
 
-The **users table** will store data about the various the owner has interated in the various transactions from the xml data and will be provided an id upon creation to serve as the primary key.
+The **Momo_Debit and Agent tables** will use users from the Users table to store data for a particular transaction from the xml data and will be provided an id upon creation to serve as the primary key.
 
-The **transaction categories table** will store the variuos kinds of transaction that can take place i.e momo to momo, momo to bank, momo to code both ways for each. So it will have a total of exaclty 6 records as a momo to momo transaction can either be the owner recieving money(credit) or sending out money(debit).
+The **Momo_Credit** will store the variuos kinds of transactions where money was credited into the momo account from individuals.
 
-The **transactions table** will then bring together data from the user and the transactions with foreign keys to store data about a transaction including the amount transacted, message and the date.
+The **Bank_Deposit** will store data related to deposited money from banks into the momo account.
 
-The status of the transaction is then logged in the **system logs table** it tracks if a transaction was successful, pending or failed with the response saved.
+The **MTN_Bundle** will store data on transactions where the user bought mtn airtime or data bundles.
+
+The **Utilities** will store all other data the user paid to for various utilities from electricity to water and various fee with the fee noted in the table under the name column.
 
 Here is a simple test of CRUD operations returned after running the database_setup.sql script
 
