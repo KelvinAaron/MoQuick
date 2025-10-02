@@ -24,15 +24,18 @@ The **Utilities** will store all other data the user paid to for various utiliti
 
 Here is a simple test of CRUD operations returned after running the database_setup.sql script
 
-![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/docs/demo.png) 
+![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/screenshots/demo.png) 
 
 #### JSON Representation:
 From the JSON example in /examples in the first momoquick object we see how each tables columns and attribute is represented as keys and value in the JSON. The user table show the columns (id, full_name, id_number) and their values for one record in the table (1, Jane Smith, 12845).
 
 The second object demonstrates a complex object of the **transactions table** showing how the foerign key points to the specific record from both the **users** and **transaction categories** table.
 
+#### SMS Records in JSON:
+To parse the xml modified_sms_v2.xml data into json you need to first create a .env file and setup "USER_NAME" and "PASSWORD" variables then run the api.py file in /api. You can then access the server running on port 8000 by visiting the endpoints documented in /docs/api_docs.md.
+
 ### Architectural Design:
 
-![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/docs/Architectural.png) 
+![alt text](https://github.com/KelvinAaron/MoQuick/blob/main/screenshots/Architectural.png) 
 
 [Scrum Board](https://github.com/users/KelvinAaron/projects/1/views/1)

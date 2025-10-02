@@ -58,7 +58,6 @@ CREATE TABLE Utilities (
 CREATE TABLE MTN_Bundle (
     Transaction_Id VARCHAR(250) PRIMARY KEY,
     Type ENUM('AIRTIME', 'DATA') NOT NULL,
-    Bundle_Amount VARCHAR(250),
     Amount INT NOT NULL,
     Fee INT NOT NULL,
     Date DATETIME NOT NULL
