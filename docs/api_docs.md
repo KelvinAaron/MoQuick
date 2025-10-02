@@ -1,4 +1,4 @@
-# 📘 MomoHandler REST API Documentation
+# 📘 MomoTransaction REST API Documentation
 
 
 This API allows clients to manage **MoMo Quick transactions** across multiple tables (`Momo_credit`, `Momo_debit`, `Agent`, `Bank_Deposit`, `MTN_Bundle`,`Utilities`).  
